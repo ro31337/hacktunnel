@@ -1,0 +1,77 @@
+.from-app-info {
+	p {
+		padding:9px 15px;
+		color: white; 
+		background: rgba(0, 0, 0, 0.3);
+		border-radius:7px;
+		display: inline;
+	}
+
+	.timestamp {
+		display: inline;
+		margin-left: 10px;
+	}
+
+	margin-bottom: 35px;
+	margin-top: 35px;
+	text-align: center;
+}
+
+.clear { clear: both }
+.from-me, .from-them {
+	p {
+		margin: 5px 0;
+	}
+	a {
+		text-decoration: underline;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	
+	/* timestamp padding */
+	p:nth-last-child(2):after {
+		content: ' ';
+		display: inline;
+		padding: 0 35px;
+	}
+	.timestamp {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		line-height: 30px;
+		padding-right: 10px;
+	}
+	margin-bottom: 5px;
+}
+.from-me {
+	position:relative;
+	padding:4px 15px;
+	color:white; 
+	background:#0B93F6;
+	border-radius:7px;
+	float: right;
+	
+	a {
+		color: white;
+	}
+	.timestamp {
+		color: #e0e0e0;
+	}
+}
+.from-them {
+	position:relative;
+	padding:4px 15px;
+	background:#E5E5EA;
+	border-radius:7px;
+	color: black;
+  	float: left;
+
+	a {
+		color: #333;
+	}
+	.timestamp {
+		color: #999;
+	}
+}

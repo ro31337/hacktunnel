@@ -1,0 +1,33 @@
+# Sample HackTunnel configuration
+[hacktunnel]
+
+# Type of logging: stdout / file / null
+logtype=stdout
+
+# HTTP server port
+http-server-port=2000
+
+# Use TLS in HTTP server? 1 = yes, 0 = no
+http-server-use-tls=0
+
+# Session timeout (how long user can interrupt websocket connection)
+connection-timeout=600
+
+# NATS server configuration (multiple servers allowed)
+nats=tcp://foo:bar@localhost:4242
+
+# Use TLS for NATS? 1 = yes, 0 = no
+nats-use-tls=0
+
+### Redis configuration
+#
+# Redis hostname/IP and port
+redis-addr=localhost:6379
+# Index of the Redis database
+redis-db=0
+# Password for access. Leave empty to turn off authentication
+redis-password=
+
+# Tunnel lifetime in Redis database, seconds
+tunnel-lifetime-sec=600
+

@@ -1,0 +1,6 @@
+port: 4242
+authorization {
+	user: foo
+	password: bar
+}
+

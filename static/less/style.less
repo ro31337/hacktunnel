@@ -1,0 +1,213 @@
+/* Styles go here */
+
+@import 'loading-indicator.less';
+@import 'custom-scrollbar.less';
+@import 'bubbles.less';
+@import 'about.less';
+
+.tnerror {
+	border-color: red;
+}
+
+body {
+  font-family: 'Open Sans', Helvetica, arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+@media screen and (max-device-width: 768px) {
+body {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+}
+
+@media screen and (min-device-width: 1300px) {
+body {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+}
+
+.headline {
+	font-family: 'Helvetica';
+}
+
+.slogan {
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.jumbotron {
+	background-color: rgba(0,0,0,0);
+}
+
+.navbar-modernized {
+  border-radius: 0;
+  margin-bottom: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.transparent {
+  background-color: transparent;
+  border: none;
+}
+
+.monospace {
+	font-family:monospace;
+}
+
+.margin-top-120px {
+	margin-top: 120px;
+}
+
+.margin-top-150px {
+  margin-top: 150px;
+}
+
+/* tunnel page */
+
+html, .tunnel-page {
+  height: 100%;
+}
+
+.tunnel-page
+{
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: no-repeat center center fixed;
+
+  .header {
+    margin-top: 20px;
+
+    .logo {
+      font-size: 18px;
+      line-height: 35px;
+
+      a {
+        color: #000000;
+        text-decoration: none;
+      }
+    } /* /logo */
+
+    .url-container {
+      padding-right: 0;
+    }
+  } /* /header */
+  .wrap {
+    height: 100%;
+    padding-top: 70px;
+
+    .wait {
+      margin-top: 70px;
+    }
+
+    /* CSS for elastic chat is complex as hell. use FLEXBOXes, the simplest approach */
+    .talk {
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+        
+      width: 100%;
+      __background-color: red;
+
+      header {
+        __background-color: gray;
+      }
+      article {
+        display: -webkit-flex;
+        flex-basis: 0%;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-shrink: 1;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+      
+        overflow-y: auto;
+        min-height: 0px;
+      }
+      footer {
+        __background-color: gray;
+
+        form input {
+          width: 100%;
+          border-width: 0px;
+          padding: 10px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+
+} /* /tunnel-page */
+
+
+.talk-bottom-panel {
+  margin-top: 20px;
+}
+
+.from-me, .from-them {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* index page */
+
+.index-page {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  h1.logo {
+    margin: 20px auto 40px auto;
+    text-indent: -5000px;
+    width: 296px;
+    height: 54px;
+    background: url(/static/img/hacktunnel-logo.png);
+  }
+}
+
+.tunnel-page {
+  .logo a {
+    margin-top: 2px;
+    display: inline-block;
+    text-indent: -5000px;
+    width: 170px;
+    height: 31px;
+    background: url(/static/img/hacktunnel-logo-small.png);
+  }
+}
+
+/* Adjust height of form-control inputs for Yeti theme */
+input.form-control-yeti-reduced-height {
+  height: 35px;
+}
+
+.footer {
+  color: #999;
+  a {
+    color: white;
+  }
+}

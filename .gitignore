@@ -1,0 +1,6 @@
+# ignored files
+
+.*.swp
+src/hacktunnel/static/vendor/*
+bin/hacktunnel
+

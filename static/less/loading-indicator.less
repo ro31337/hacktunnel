@@ -1,0 +1,43 @@
+.loading-indicator {
+  display: inline-block;
+  background: transparent;
+  border: 6.5px solid #ddd;
+  border-radius: 27px;
+  height: 54px;
+  width: 54px;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+  padding: 0;
+  position: relative;
+
+  svg {
+    position: absolute;
+    height: 54px;
+    width: 54px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    color: #337AB7;
+    top: 21px;
+    left: 21px;
+    animation: spin 0.9s infinite cubic-bezier(0.085, 0.260, 0.935, 0.710);
+
+    path {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 5;
+      transition: opacity 0.15s 0.3s;
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+    transform-origin: center center;
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+    transform-origin: center center;
+  }
+}
