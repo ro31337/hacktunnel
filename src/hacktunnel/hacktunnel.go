@@ -67,8 +67,7 @@ func indexFileHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func redirHandler(w http.ResponseWriter, req *http.Request) {
-	http.Redirect(w, req, config.C().RedirTo+req.RequestURI,
-		http.StatusMovedPermanently)
+	http.Redirect(w, req, config.C().RedirTo, http.StatusMovedPermanently)
 }
 
 func setupRoutes(r *ax.Router) {
@@ -106,7 +105,8 @@ func redir() {
 	log.Printf("Serving %d for redirection\n", port)
 	addr := fmt.Sprintf(":%d", port)
 	r := mux.NewRouter()
-	r.HandleFunc("/hello", redirHandler).Methods("GET")
+	r.HandleFunc("/", redirHandler).Methods("GET")
+	r.HandleFunc("/{tunnel_name}", redirHandler).Methods("GET")
 	srv := endless.NewServer(addr, r)
 	log.Println(srv.ListenAndServe())
 }
