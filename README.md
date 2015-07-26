@@ -41,4 +41,4 @@ See comments in the sample hacktunnel.conf.sample for setting up server paramete
 
 ## License
 
-AGPL
+AGPL 3
