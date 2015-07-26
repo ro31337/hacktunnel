@@ -264,7 +264,7 @@ var RequestTunnelView = React.createClass({
             {
             this.state.wait ? null :
             <div className="col-xs-12 text-center footer margin-top-150px">
-                <a href="/about">About</a> | <a href="http://devhq.io" target="_blank" title="Made in DevHQ">DevHQ</a>
+                <a href="/about">About</a> | <a href="https://github.com/devhq-io/hacktunnel" target="_blank">Github</a> | <a href="http://devhq.io" target="_blank" title="Made in DevHQ">DevHQ</a>
             </div>
             }
         </div>
