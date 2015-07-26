@@ -67,7 +67,8 @@ func indexFileHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func redirHandler(w http.ResponseWriter, req *http.Request) {
-	http.Redirect(w, req, config.C().RedirTo, http.StatusMovedPermanently)
+	http.Redirect(w, req, config.C().RedirTo+req.RequestURI,
+		http.StatusMovedPermanently)
 }
 
 func setupRoutes(r *ax.Router) {
