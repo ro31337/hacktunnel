@@ -31,7 +31,7 @@ make run
 
 Navigate to http://localhost:2000
 
-See comments in the sample hacktunnel.conf.sample for setting up server parameters.
+See comments in *hacktunnel.conf.sample* for setting up server parameters.
 
 ## Plans
 
