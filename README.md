@@ -29,9 +29,9 @@ cp hacktunnel.conf.sample hacktunnel.conf
 make run
 ```
 
-Navigate to http://localhost:2000
+Navigate to `http://localhost:2000`
 
-See comments in *hacktunnel.conf.sample* for setting up server parameters.
+See comments in `hacktunnel.conf.sample` for setting up server parameters.
 
 ## Plans
 
