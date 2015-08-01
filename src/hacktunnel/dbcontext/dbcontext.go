@@ -85,6 +85,11 @@ func Del(id string, key string) (bool, error) {
 	return client.Hdel(rkeyname, key)
 }
 
+func DeleteBucket(id string) (bool, error) {
+	rkeyname := redisKeyName(id)
+	return client.Del(rkeyname)
+}
+
 func SetAdd(id string, val []byte) (bool, error) {
 	rkeyname := redisKeyName(id)
 	return client.Sadd(rkeyname, val)

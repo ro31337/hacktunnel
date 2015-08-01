@@ -45,7 +45,7 @@ func testFailGet(t *testing.T) {
 }
 
 func TestPutGetTimeout(t *testing.T) {
-	Delete("user1")
+	DeleteBucket("user1")
 	testPut(t)
 	testGet(t)
 	testPut(t)
@@ -65,7 +65,7 @@ func TestPutGetTimeout(t *testing.T) {
 }
 
 func TestSets(t *testing.T) {
-	Delete("user2")
+	DeleteBucket("user2")
 	ex, err := SetAdd("user2", []byte("foo"))
 	if err != nil {
 		t.Fatal(err)

@@ -7,6 +7,9 @@ compile:
 	./node_modules/react-tools/bin/jsx ./static/js/etc/ui.js > ./static/js/etc/ui-translated.js
 	@gb build || (echo 'Error. Try to run "make get-deps"' ; exit 1)
 
+test:
+	@gb test
+
 get-deps:
 	go get -u github.com/constabulary/gb/...
 	rm -rf ./vendor
