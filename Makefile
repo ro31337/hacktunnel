@@ -20,9 +20,10 @@ get-deps:
 	gb vendor fetch -no-recurse github.com/devhq-io/ax
 	gb vendor fetch -no-recurse github.com/devhq-io/endless
 	gb vendor fetch -no-recurse github.com/cloudfoundry/gosigar
-	bower install
 	npm install react-tools
+	npm install --force bower
 	npm install less
+	./node_modules/bower/bin/bower install
 
 delete-deps:
 	rm -rf ./vendor
