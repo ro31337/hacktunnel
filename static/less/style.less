@@ -133,6 +133,7 @@ html, .tunnel-page {
       }
       article {
         display: -webkit-flex;
+        display: flex;
         flex-basis: 0%;
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -142,9 +143,11 @@ html, .tunnel-page {
         -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
         justify-content: flex-end;
-      
-        overflow-y: auto;
         min-height: 0px;
+
+        div {
+          overflow-y: auto;
+        }
       }
       footer {
         __background-color: gray;

@@ -507,8 +507,8 @@ var Talk = React.createClass({
         return (
   <div id="Talk" className="talk">
     <header></header>
-    <article id="scrollable" className="container talk-main-panel">
-      <div className="row">
+    <article className="container talk-main-panel">
+      <div className="row" id="scrollable">
 
         <div className="col-xs-12">
           <div id="msglist">
