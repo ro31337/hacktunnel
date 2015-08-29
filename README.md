@@ -35,9 +35,11 @@ See comments in `hacktunnel.conf.sample` for setting up server parameters.
 
 ## Plans
 
+* Add optional nicknames/usernames support 
 * Add WebRTC support for video/voice conferencing
 * Support chat rooms for more than 2 peers
 * Support for majority of browsers (including browsers for mobile devices)
+* Button for changing current chat background
 
 ## License
 
