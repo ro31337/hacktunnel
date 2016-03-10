@@ -12,24 +12,14 @@ test:
 
 get-deps:
 	go get -u github.com/constabulary/gb/...
-	rm -rf ./vendor
-	gb vendor fetch -no-recurse github.com/dchest/uniuri
-	gb vendor fetch -no-recurse github.com/gorilla/mux
-	gb vendor fetch -no-recurse github.com/gorilla/context
-	gb vendor fetch -no-recurse github.com/gorilla/websocket
-	gb vendor fetch -no-recurse github.com/scalingdata/gcfg
-	gb vendor fetch -no-recurse github.com/hoisie/redis
-	gb vendor fetch -no-recurse github.com/nats-io/nats
-	gb vendor fetch -no-recurse github.com/devhq-io/ax
-	gb vendor fetch -no-recurse github.com/devhq-io/endless
-	gb vendor fetch -no-recurse github.com/cloudfoundry/gosigar
+	@gb vendor restore
 	npm install react-tools
 	npm install --force bower
 	npm install less
 	./node_modules/bower/bin/bower install
 
 delete-deps:
-	rm -rf ./vendor
+	rm -rf ./vendor/src
 	rm -rf ./static/vendor
 	rm -rf ./node_modules
 

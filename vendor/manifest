@@ -1,0 +1,71 @@
+{
+	"version": 0,
+	"dependencies": [
+		{
+			"importpath": "github.com/cloudfoundry/gosigar",
+			"repository": "https://github.com/cloudfoundry/gosigar",
+			"revision": "3ed7c74352dae6dc00bdc8c74045375352e3ec05",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/dchest/uniuri",
+			"repository": "https://github.com/dchest/uniuri",
+			"revision": "8902c56451e9b58ff940bbe5fec35d5f9c04584a",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/devhq-io/ax",
+			"repository": "https://github.com/devhq-io/ax",
+			"revision": "ced4378ede716e04c91ef2f4a179e62985ace10e",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/devhq-io/endless",
+			"repository": "https://github.com/devhq-io/endless",
+			"revision": "399f1ee2768622f4adfbe75e5370cb22447a79d0",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/gorilla/context",
+			"repository": "https://github.com/gorilla/context",
+			"revision": "1ea25387ff6f684839d82767c1733ff4d4d15d0a",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/gorilla/mux",
+			"repository": "https://github.com/gorilla/mux",
+			"revision": "acf3be1b335c8ce30b2c8d51300984666f0ceefa",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/gorilla/websocket",
+			"repository": "https://github.com/gorilla/websocket",
+			"revision": "a622679ebd7a3b813862379232f645f8e690e43f",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/hoisie/redis",
+			"repository": "https://github.com/hoisie/redis",
+			"revision": "788f01e396a99c96c8f56338383926f16841ebae",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/nats-io/nats",
+			"repository": "https://github.com/nats-io/nats",
+			"revision": "68c3392647a645ac165688885902db76c68c1688",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/nats-io/nuid",
+			"repository": "https://github.com/nats-io/nuid",
+			"revision": "7ae524d04985995f8a46e5b2780184b47a56543a",
+			"branch": "master"
+		},
+		{
+			"importpath": "github.com/scalingdata/gcfg",
+			"repository": "https://github.com/scalingdata/gcfg",
+			"revision": "37aabad69cfd3d20b8390d902a8b10e245c615ff",
+			"branch": "master"
+		}
+	]
+}
